@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:background="@android:color/transparent">
+
+    <ImageButton
+        android:id="@id/exo_play_pause"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Play or Pause"
+        android:scaleType="fitCenter"
+        android:src="@drawable/exo_styled_controls_play"
+        android:tint="#FFD700" />
+
+</LinearLayout>

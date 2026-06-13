@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="100dp">
+
+            <TextView style="@style/CategoryTitleStyle" android:text="Latest News" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvNews"
+                style="@style/PodcastRecyclerViewStyle" />
+
+            <TextView style="@style/CategoryTitleStyle" android:text="Mythology &amp; Culture" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvMythology"
+                style="@style/PodcastRecyclerViewStyle" />
+
+            <TextView
+                style="@style/CategoryTitleStyle"
+                android:text="Aaj Tak Special"
+                android:textColor="#FFD700" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvAajtak"
+                style="@style/PodcastRecyclerViewStyle" />
+
+            <TextView style="@style/CategoryTitleStyle" android:text="True Crime" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvCrime"
+                style="@style/PodcastRecyclerViewStyle" />
+
+            <TextView style="@style/CategoryTitleStyle" android:text="Motivational" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvMotivational"
+                style="@style/PodcastRecyclerViewStyle" />
+
+            <TextView style="@style/CategoryTitleStyle" android:text="Popular Stories" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvStories"
+                style="@style/PodcastRecyclerViewStyle" />
+
+            <TextView style="@style/CategoryTitleStyle" android:text="Audio Books" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvAudiobook"
+                style="@style/PodcastRecyclerViewStyle" />
+
+            <TextView style="@style/CategoryTitleStyle" android:text="Kids Special" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvKids"
+                style="@style/PodcastRecyclerViewStyle" />
+
+            <TextView style="@style/CategoryTitleStyle" android:text="Knowledge &amp; Facts" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvKnowledge"
+                style="@style/PodcastRecyclerViewStyle" />
+
+            <TextView style="@style/CategoryTitleStyle" android:text="Spirituality" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvSpirituality"
+                style="@style/PodcastRecyclerViewStyle" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <ProgressBar
+        android:id="@+id/podcastLoader"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="#FFD700"
+        android:visibility="gone" />
+
+</RelativeLayout>
